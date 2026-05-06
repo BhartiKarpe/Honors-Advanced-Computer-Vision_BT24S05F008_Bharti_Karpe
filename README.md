@@ -1,50 +1,28 @@
-# Honors Advanced Computer Vision – Project Submission
+# ⬡ Edge Detection Studio — Streamlit
 
-## Submission Description
+A beautiful, interactive edge detection app built with Streamlit + OpenCV.
 
-This repository contains the submission for the **Honors Advanced Computer Vision** project.  
-Students are required to upload their complete project work including source code, datasets (if used), outputs, documentation, and related files.
+## Setup
 
-The purpose of this submission format is to maintain a clear and organized structure so that all project submissions can be easily tracked, reviewed, and evaluated.
-
----
-
-# Pull Request / Repository Title Format
-
-Students must follow the exact naming format given below while creating the repository or Pull Request.
-
-## Format
-
-```text
-ProjectName_RollNumber_StudentName
+```bash
+pip install -r requirements.txt
+streamlit run app.py
 ```
 
-## Example
+## Features
 
-```text
-Honors-Advanced-Computer-Vision_BT23F001_AdityaPatil
-```
+- **3 Detection Methods**: Canny, Sobel, Laplacian
+- **Real-time parameter tuning** via sliders & radio buttons
+- **6+ edge colors**: Cyan, Violet, Orange, Red, White, Yellow, Green, Hot Pink
+- **3-panel view**: Original · Edge Map · Overlay
+- **Full-resolution preview**
+- **One-click export**: overlay PNG, edge map PNG, original PNG
+- **Live stats**: resolution, edge density %, method, color
 
----
+## Methods
 
-# Required Submission Contents
-
-Each submission should include:
-
-- Source Code
-- Project Files
-- README.md
-- Output Screenshots / Results
-- Dataset (if applicable)
-- Model Files (if applicable)
-
----
-
-# Important Notes
-
-- Use proper folder structure.
-- Keep code clean and well documented.
-- Repository name must strictly follow the given format.
-- Incomplete or incorrectly named submissions may not be considered for evaluation.
-
----
+| Method | Best for |
+|---|---|
+| Canny | General purpose — clean, thin edges |
+| Sobel | Gradient direction, smooth edges |
+| Laplacian | Fine detail, texture edges |
